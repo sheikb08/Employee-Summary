@@ -96,7 +96,7 @@ async function addEmployee() {
 	prompts.addEmployee.push({
 		type: "list",
 		name: "roleName",
-		message: "What is role ?",
+		message: "Which role?",
 		choices: roleNames,
 	});
 
@@ -104,7 +104,7 @@ async function addEmployee() {
 	prompts.addEmployee.push({
 		type: "list",
 		name: "managerName",
-		message: "What is manager name ?",
+		message: "What is your manager name?",
 		choices: employeeNames,
 	});
 
@@ -160,7 +160,7 @@ async function addRole() {
 	prompts.addRole.push({
 		type: "list",
 		name: "departmentName",
-		message: "What is role's department Name ?",
+		message: "What is the department name of the role?",
 		choices: departments,
 	});
 
@@ -205,7 +205,7 @@ async function updateEmployeeRole() {
 	updateEmpRole.push({
 		type: "list",
 		name: "empName",
-		message: "Which employee's role to update?",
+		message: "Which employee's role would you like to update?",
 		choices: employeeNames,
 	});
 
@@ -213,7 +213,7 @@ async function updateEmployeeRole() {
 	updateEmpRole.push({
 		type: "list",
 		name: "roleName",
-		message: "Which role to update for current employee?",
+		message: "What role would you like your current employee to have?",
 		choices: roleNames,
 	});
 
@@ -261,7 +261,7 @@ async function updateEmployeeManager() {
 	updateEmpManager.push({
 		type: "list",
 		name: "empName",
-		message: "Which employee's manager to update?",
+		message: "What would you like to update the employee's manager to?",
 		choices: employeeNames,
 	});
 
@@ -275,7 +275,7 @@ async function updateEmployeeManager() {
 	updateEmpManager.push({
 		type: "list",
 		name: "managerName",
-		message: "Who is employee's new manager?",
+		message: "Who is the employee's new manager?",
 		choices: empNames,
 	});
 
@@ -333,7 +333,7 @@ async function removeEmployee() {
 	removeEmpPrompt.push({
 		type: "list",
 		name: "empName",
-		message: "Which employee to remove?",
+		message: "Which employee would you like to remove?",
 		choices: employeeNames,
 	});
 
@@ -360,28 +360,28 @@ async function removeEmployee() {
 // Main prompt for user to choose action
 async function mainPrompt() {
 	
-	// Prompt user for main prompt
+	// Prompt that renders functions.
 	const { menuAction } = await inquirer.prompt(prompts.mainPrompt);
 	
 	switch (menuAction) {
 		
-		case "View all employees":
+		case "View All Employees":
 			viewAllEmployees();
 			break;
 
-		case "View all employees by department":
+		case "View All Employees by Department":
 			viewEmployeesByDepartment();
 			break;
 
-		case "View all employees by manager":
+		case "View All Employees by Manager":
 			viewAllEmployeesByManager();
 			break;
 
-		case "View all roles":
+		case "View All Roles":
 			viewAllRoles();
 			break;
 
-		case "View all departments":
+		case "View All Departments":
 			viewAllDepartments();
 			break;
 
@@ -397,11 +397,11 @@ async function mainPrompt() {
 			addRole();
 			break;
 
-		case "Update employee role":
+		case "Update Employee Role":
 			updateEmployeeRole();
 			break;
 
-		case "Update employee manager":
+		case "Update Employee Manager":
 			updateEmployeeManager();
 			break;
 
@@ -419,7 +419,7 @@ async function mainPrompt() {
 
 function init() {
 
-	//logo
+	//This creates the Employee Management System Logo
 	console.log(
 		logo({
 			name: 'Employee Management System',
@@ -428,7 +428,7 @@ function init() {
 			padding: 3,
 			margin: 4,
 			borderColor: 'bold-white',
-			logoColor: 'bold-cyan',
+			logoColor: 'bold-green',
 		})
 		.emptyLine()
 		.render()

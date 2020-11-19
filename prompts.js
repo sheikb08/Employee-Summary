@@ -6,23 +6,23 @@ module.exports = {
             name : 'menuAction',
             message: 'What would you like to do?',
             choices :[
-                'View all employees',
-                'View all employees by department',
-                'View all employees by manager',
-                'View all roles',
-                'View all departments',               
+                'View All Employees',
+                'View All Employees by Department',
+                'View Al Employees by Manager',
+                'View All Roles',
+                'View All Departments',               
                 'Add Employee',
                 'Add Department',
                 'Add Role',
-                'Update employee role',
-                'Update employee manager',
+                'Update Employee Role',
+                'Update Employee Manager',
                 'Remove Employee',
                 'Exit'
             ]
         }
     ],
 
-    // Questions for add department
+    // Questions for adding a department
     addDepartment : [
         {
             type : 'input',
@@ -32,7 +32,7 @@ module.exports = {
     ]
     ,
 
-    // Questions for add role
+    // Questions for adding a role
     addRole : [
         {
             type : 'input',
@@ -47,7 +47,7 @@ module.exports = {
     ]
     ,
     
-    // Questions for add employee
+    // Questions for adding an employee
     addEmployee: [
         {
             type: 'input',
