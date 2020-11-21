@@ -1,7 +1,5 @@
 # Unit 12: Employee Management System
 
-# TeamProfile Generator
-
 ## Table of Contents
   - [Note Taker](#employee-management-system)
   - [Table of Contents](#table-of-contents)
