@@ -2,13 +2,13 @@ module.exports = {
     // Inquirer questions for mainprompt
     mainPrompt : [
         {
-            type : 'rawlist',
+            type : 'list',
             name : 'menuAction',
             message: 'What would you like to do?',
             choices :[
                 'View All Employees',
                 'View All Employees by Department',
-                'View Al Employees by Manager',
+                'View All Employees by Manager',
                 'View All Roles',
                 'View All Departments',               
                 'Add Employee',

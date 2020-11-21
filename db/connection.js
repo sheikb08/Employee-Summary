@@ -2,6 +2,7 @@
 
 const util = require('util');
 const mysql = require('mysql');
+const express = require("express");
 
 // Create database connection
 const connection = mysql.createConnection({
@@ -11,7 +12,7 @@ const connection = mysql.createConnection({
     user : 'root',
 
     //password
-    password : '12345678',
+    password : '',
 
     // database name to connect with
     database : 'employee_DB'

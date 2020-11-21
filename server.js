@@ -361,7 +361,7 @@ async function removeEmployee() {
 async function mainPrompt() {
 	
 	// Prompt that renders functions.
-	const { menuAction } = await inquirer.prompt(prompts.mainPrompt);
+	const { menuAction} = await inquirer.prompt(prompts.mainPrompt);
 	
 	switch (menuAction) {
 		
