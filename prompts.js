@@ -1,5 +1,5 @@
 module.exports = {
-    // Inquirer questions for mainprompt
+    // Asking questions for mainprompt
     mainPrompt : [
         {
             type : 'list',
